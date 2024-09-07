@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .visualization {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segmentation Result</h1>
+    
+    <!-- <h2>Uploaded Image</h2>
+    <img src="{{ url_for('static', filename='uploads/' + original_image) }}" alt="Uploaded Image"> -->
+    
+    <h2>Prediction Visualization</h2>
+    <div class="visualization">
+        <img src="data:image/png;base64,{{ prediction_image }}" alt="Prediction Visualization">
+    </div>
+    
+    <h2>Download Predicted Mask</h2>
+    <p>You can download the predicted mask as a NumPy file:</p>
+    <a href="{{ url_for('static', filename='uploads/' + mask_image) }}" download>Download Predicted Mask</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+  </head>
+  <body>
+    <h1>Prediction Result</h1>
+    <h2>Uploaded Image</h2>
+    <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Uploaded Image">
+    
+    <h2>Prediction</h2>
+    <img src="data:image/png;base64,{{ prediction_image }}" alt="Prediction">
+    
+    <h2>Download Mask</h2>
+    <a href="{{ url_for('static', filename='uploads/' + mask_image) }}" download>Download Prediction Mask</a>
+  </body>
+</html>
