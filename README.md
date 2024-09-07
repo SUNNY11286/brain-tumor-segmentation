@@ -37,28 +37,10 @@ pip install -r requirements.txt
    ```git
    https://github.com/SUNNY11286/SAFCF-federated-contrastive-segmentation-framework.git
    ```
-2. **Prepare your dataset:**
-
-Ensure your dataset is structured as follows:
-
-```
-/kaggle/input/
-├── msd-reshaped-64/
-│   ├── task04_hippocampus_64/
-│   │   ├── images/
-│   │   └── masks/
-│   ├── task02_heart_64/
-│   │   ├── images/
-│   │   └── masks/
-├── msd01-64/
-│   ├── processed_64/
-│   │   ├── images/
-│   │   └── masks/
-```
 
 3. **Run the training script:**
    ```
-   python main.py
+   python app.py
    ```
    
 
