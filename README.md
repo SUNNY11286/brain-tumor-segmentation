@@ -1,4 +1,4 @@
-# 3D Medical Image Segmentation
+# 3D Brain Tumour Segmentation
 
 It is federated framework for the segmentation task, which uses novel loss and aggregation strategies.
 
