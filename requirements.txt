@@ -5,3 +5,5 @@ tqdm
 tensorflow-addons
 tensorflow-probability==0.17.0
 matplotlib
+Flask
+Werkzeug
